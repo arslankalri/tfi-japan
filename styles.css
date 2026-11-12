@@ -1,0 +1,60 @@
+:root{
+  --navy:#101623; --navy2:#182238; --gold:#c9a227; --gold2:#e3c558;
+  --ink:#1c2430; --muted:#5b6572; --bg:#ffffff; --alt:#f4f6f9; --line:#e2e7ee;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:#8a6d14}
+.site-header{background:var(--navy);position:sticky;top:0;z-index:10}
+.header-in{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;flex-wrap:wrap;gap:8px}
+.brand{color:#fff;text-decoration:none;font-size:1.5rem;font-weight:800;letter-spacing:.5px}
+.brand span{color:var(--gold)}
+.nav a{color:#dfe5ee;text-decoration:none;margin-left:18px;font-size:.95rem}
+.nav a:hover{color:var(--gold2)}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 70%);color:#fff;padding:84px 0 72px}
+.kicker{color:var(--gold2);text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:700;margin:0 0 14px}
+.hero h1{font-size:2.6rem;line-height:1.15;margin:0 0 18px}
+.hero-sub{max-width:640px;color:#c7cfdd;font-size:1.1rem;margin:0 0 28px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:8px;text-decoration:none;font-weight:700;border:2px solid transparent;cursor:pointer;font-size:1rem}
+.btn-gold{background:var(--gold);color:#141414}
+.btn-gold:hover{background:var(--gold2)}
+.btn-ghost{border-color:#8d99ad;color:#fff;background:transparent}
+.btn-ghost:hover{border-color:var(--gold2);color:var(--gold2)}
+.btn-ghost.dark{border-color:#8a94a4;color:var(--ink)}
+.hero-points{list-style:none;display:flex;gap:26px;flex-wrap:wrap;padding:0;margin:34px 0 0;color:#aeb9ca;font-size:.95rem}
+.section{padding:70px 0}
+.section.alt{background:var(--alt)}
+.section h2{font-size:2rem;margin:0 0 10px}
+.section-sub{color:var(--muted);max-width:640px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px}
+.card h3{margin-top:0}
+.card a{font-weight:700;text-decoration:none}
+.auction-band{margin-top:26px;background:var(--navy);color:#e8edf5;border-radius:12px;padding:28px}
+.auction-band h3{color:var(--gold2);margin-top:0}
+.stock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-top:26px}
+.car{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.car .photo{height:150px;display:flex;align-items:center;justify-content:center;font-size:3.2rem;background:linear-gradient(135deg,#232f47,#141c2e);color:#fff}
+.car .body{padding:18px}
+.car h3{margin:0 0 6px;font-size:1.15rem}
+.car .price{color:#8a6d14;font-weight:800;font-size:1.25rem;margin:6px 0}
+.car .specs{color:var(--muted);font-size:.9rem;margin:0}
+.car .tag{display:inline-block;background:#fdf3d0;color:#7a5f10;border-radius:20px;padding:2px 10px;font-size:.75rem;font-weight:700;margin-top:10px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:26px}
+.step{display:flex;gap:14px;align-items:flex-start}
+.step span{background:var(--gold);color:#141414;font-weight:800;border-radius:50%;width:38px;height:38px;display:flex;align-items:center;justify-content:center;flex:none}
+.request-form{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;max-width:760px;margin-top:22px}
+.request-form label{display:block;font-weight:600;margin-bottom:16px;font-size:.95rem}
+.request-form input,.request-form select,.request-form textarea{width:100%;margin-top:6px;padding:11px 12px;border:1px solid #c6cedb;border-radius:8px;font:inherit;font-weight:400;background:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-note{color:var(--muted);font-size:.85rem}
+.form-result{margin-top:18px;background:var(--alt);border:1px solid var(--line);border-radius:10px;padding:16px}
+.form-result textarea{width:100%}
+details{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-top:12px;background:#fff}
+summary{font-weight:700;cursor:pointer}
+.site-footer{background:var(--navy);color:#c7cfdd;padding:34px 0;margin-top:0}
+.site-footer .fine{color:#7f8a9c;font-size:.85rem}
+@media (max-width:640px){.hero h1{font-size:1.9rem}.grid2{grid-template-columns:1fr}.nav a{margin-left:12px}}

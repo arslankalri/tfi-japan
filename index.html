@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TFI Japan — Used Cars Bought &amp; Sold | Finance International</title>
+<meta name="description" content="TFI Japan (Finance International) buys and sells quality used cars in Japan. Buy from our stock, sell us your car, bid through Japanese auctions, or tell us the exact car you want — we find it and quote you a price.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="#top">TFI <span>Japan</span></a>
+    <nav class="nav">
+      <a href="#stock">Stock</a>
+      <a href="#how">How It Works</a>
+      <a href="#sell">Sell Your Car</a>
+      <a href="#request">Request a Car</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Finance International · Used Car Dealer, Japan</p>
+      <h1>Buy &amp; sell used cars —<br>or tell us the car you want, and we find it.</h1>
+      <p class="hero-sub">TFI Japan buys cars locally, sells from our own stock and through Japan's car auctions — and on demand, we source the exact make and model you are looking for and quote you one clear price.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#stock">Browse Stock</a>
+        <a class="btn btn-ghost" href="#request">Request a Car</a>
+      </div>
+      <ul class="hero-points">
+        <li>✔ Local buying &amp; selling</li>
+        <li>✔ Japanese auction access</li>
+        <li>✔ On-demand car sourcing</li>
+        <li>✔ One clear quoted price</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <div class="wrap">
+      <h2>How TFI Japan works</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>1 · Buy from our stock</h3>
+          <p>We buy good used cars locally, check them, and sell them at fair prices. See what is available now in the stock list below — every car is inspected before it is listed.</p>
+          <a href="#stock">See stock →</a>
+        </article>
+        <article class="card">
+          <h3>2 · Sell your car</h3>
+          <p>Selling a car in Japan? We buy directly for cash, or we can sell it for you through the auction. Tell us about your car and we will give you an honest valuation.</p>
+          <a href="#sell">Sell your car →</a>
+        </article>
+        <article class="card">
+          <h3>3 · We find it for you</h3>
+          <p>Looking for something specific? Send us the make, model, year and budget. We search our network and the auctions, find matching cars, and come back with a price. No charge to ask.</p>
+          <a href="#request">Request a car →</a>
+        </article>
+      </div>
+      <div class="auction-band">
+        <h3>Japanese auction access</h3>
+        <p>Thousands of used cars pass through Japan's auctions every week. TFI Japan can buy at auction on your behalf — you choose the budget and the condition grade, we handle the bidding, inspection sheet translation, and delivery arrangements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stock" class="section alt">
+    <div class="wrap">
+      <h2>Current stock</h2>
+      <p class="section-sub">Inspected used cars available now. Stock changes fast — if you don't see what you want, <a href="#request">request it</a> and we will find it.</p>
+      <div id="stock-grid" class="stock-grid"></div>
+    </div>
+  </section>
+
+  <section id="sell" class="section">
+    <div class="wrap">
+      <h2>Sell your car</h2>
+      <div class="steps">
+        <div class="step"><span>1</span><p><strong>Tell us about it</strong> — use the form below and choose “Sell my car”. Make, model, year, mileage, and condition.</p></div>
+        <div class="step"><span>2</span><p><strong>Get a valuation</strong> — we check the local market and current auction prices and give you a real offer.</p></div>
+        <div class="step"><span>3</span><p><strong>Choose how to sell</strong> — sell to us directly, or let us sell it at auction for you. We handle the paperwork.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="request" class="section alt">
+    <div class="wrap">
+      <h2>Request a car / sell your car</h2>
+      <p class="section-sub">Tell us exactly what you are looking for — or what you have to sell. We will search and reply with available cars and a price.</p>
+      <form id="request-form" class="request-form">
+        <label>What do you want to do?
+          <select id="f-type" required>
+            <option value="Buy a specific car">Find &amp; buy a specific car for me</option>
+            <option value="Sell my car">Sell my car</option>
+            <option value="Auction enquiry">Buy through the auction</option>
+            <option value="General enquiry">General enquiry</option>
+          </select>
+        </label>
+        <div class="grid2">
+          <label>Your name <input id="f-name" type="text" required placeholder="Full name"></label>
+          <label>Phone / WhatsApp <input id="f-phone" type="tel" placeholder="e.g. 090-0000-0000"></label>
+        </div>
+        <label>Email <input id="f-email" type="email" required placeholder="you@example.com"></label>
+        <div class="grid2">
+          <label>Car make <input id="f-make" type="text" placeholder="e.g. Toyota" required></label>
+          <label>Car model <input id="f-model" type="text" placeholder="e.g. Prius" required></label>
+        </div>
+        <div class="grid2">
+          <label>Year (from) <input id="f-yearfrom" type="number" min="1990" max="2026" placeholder="2018"></label>
+          <label>Year (to) <input id="f-yearto" type="number" min="1990" max="2026" placeholder="2022"></label>
+        </div>
+        <div class="grid2">
+          <label>Budget (¥) — for buyers <input id="f-budget" type="text" placeholder="e.g. ¥800,000"></label>
+          <label>Mileage — for sellers <input id="f-mileage" type="text" placeholder="e.g. 85,000 km"></label>
+        </div>
+        <div class="grid2">
+          <label>Transmission
+            <select id="f-transmission"><option>Automatic</option><option>Manual</option><option>No preference</option></select>
+          </label>
+          <label>Fuel
+            <select id="f-fuel"><option>Petrol</option><option>Hybrid</option><option>Diesel</option><option>Electric</option><option>No preference</option></select>
+          </label>
+        </div>
+        <label>Anything else? (colour, grade, features, your location…)
+          <textarea id="f-notes" rows="4" placeholder="Tell us anything that helps us find the right car."></textarea>
+        </label>
+        <button class="btn btn-gold" type="submit">Send Request</button>
+        <p class="form-note">Submitting opens your email app with the request ready to send to TFI Japan. Prefer to copy it instead? Use the button that appears after sending.</p>
+        <div id="form-result" class="form-result" hidden>
+          <p><strong>Your request is ready.</strong> If your email app didn't open, copy this text and send it to us:</p>
+          <textarea id="form-output" rows="10" readonly></textarea>
+          <button class="btn btn-ghost dark" type="button" id="copy-btn">Copy request</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <details><summary>How does on-demand sourcing work?</summary><p>You send us the make, model, year range and budget through the request form. We search local stock and the Japanese auctions, find matching cars, and reply with photos, condition details and one total price. You only pay when you accept a car.</p></details>
+      <details><summary>Can you buy a car for me at auction?</summary><p>Yes. Tell us the car and your maximum budget. We bid at the auction on your behalf, translate the inspection sheet, and arrange delivery. Auction fees and transport are included in the price we quote you — no surprises afterwards.</p></details>
+      <details><summary>How do I sell my car to TFI Japan?</summary><p>Send the “Sell my car” form with your car's details. We will value it against the local market and recent auction results, then offer you a direct purchase price — or, if you prefer, we can sell it at auction for you.</p></details>
+      <details><summary>Do you deliver outside your area?</summary><p>Yes — delivery within Japan can be arranged for any car we sell. The cost is included in your quote before you decide.</p></details>
+      <details><summary>Is it free to make a request?</summary><p>Yes. Requests and valuations are free and there is no obligation to buy or sell.</p></details>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="section-sub">TFI Japan — Finance International · Used car buying &amp; selling, Japan.<br>
+      The fastest way to reach us is the <a href="#request">request form</a> above — we reply with cars and prices, not just a callback promise.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>TFI Japan</strong> · Finance International — Buy &amp; sell used cars · Auction sourcing · On-demand car finding</p>
+    <p class="fine">© TFI Japan. All prices in Japanese yen (¥), including tax unless stated.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
