@@ -8,9 +8,11 @@ Business website for **TFI Japan (Finance International)**, a used-car business 
   request form; TFI finds the car and quotes a price
 
 ## Files
-- `index.html` — the whole page (hero, how it works, stock, sell-your-car, request form, FAQ, contact)
-- `styles.css` — styling (navy + gold "finance" theme)
-- `script.js` — stock list + request-form logic
+- `index.html` — the whole page (hero + car search, stock with filters, auction guide with grade explainer, sell-your-car, request form, FAQ)
+- `styles.css` — styling (bright auction-site theme: white/light blue, navy + gold, red prices)
+- `script.js` — stock list, filters/sorting, search + request-form logic
+- `logo.svg` — the TFI Japan badge logo (gold car on navy). The header/hero/footer use it;
+  a wide "TFI JAPAN — FINANCE INTERNATIONAL" lockup PNG can be regenerated from it anytime.
 
 ## Editing
 - **Stock:** edit the `STOCK` array at the top of `script.js` (make, model, year,
