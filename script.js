@@ -3,7 +3,7 @@
 const BUSINESS_EMAIL = "arslankalri@gmail.com";
 
 // ---- Stock list: edit this array to change the cars on the page ----
-// price in yen (number). category: hybrid | kei | family | city | suv
+// price in yen (number). category: hybrid | kei | family | city | truck
 const STOCK = [
   { make:"Toyota", model:"Prius", year:2019, mileage:"68,000 km", transmission:"Automatic", fuel:"Hybrid", price:1280000, category:"hybrid", tag:"Hybrid · Great economy" },
   { make:"Honda", model:"Fit", year:2020, mileage:"45,000 km", transmission:"Automatic", fuel:"Petrol", price:980000, category:"city", tag:"Compact · Easy to drive" },
@@ -11,6 +11,7 @@ const STOCK = [
   { make:"Suzuki", model:"Hustler", year:2021, mileage:"30,000 km", transmission:"Automatic", fuel:"Petrol", price:890000, category:"kei", tag:"Kei car · Cheap to run" },
   { make:"Toyota", model:"Aqua", year:2019, mileage:"59,000 km", transmission:"Automatic", fuel:"Hybrid", price:870000, category:"hybrid", tag:"Hybrid · City car" },
   { make:"Daihatsu", model:"Move", year:2020, mileage:"41,000 km", transmission:"Automatic", fuel:"Petrol", price:720000, category:"kei", tag:"Kei car · Low tax" },
+  { make:"Toyota", model:"Dyna Truck", year:2018, mileage:"96,000 km", transmission:"Manual", fuel:"Diesel", price:1580000, category:"truck", tag:"2t truck · Export favourite" },
 ];
 
 const yen = (n) => "¥" + n.toLocaleString("en-US");
@@ -22,6 +23,7 @@ function visibleStock(){
   if (stockFilter === "hybrid") list = list.filter(c => c.fuel === "Hybrid");
   else if (stockFilter === "kei") list = list.filter(c => c.category === "kei");
   else if (stockFilter === "family") list = list.filter(c => c.category === "family");
+  else if (stockFilter === "truck") list = list.filter(c => c.category === "truck");
   else if (stockFilter === "budget") list = list.filter(c => c.price < 1000000);
   if (stockSort === "low") list.sort((a,b) => a.price - b.price);
   if (stockSort === "high") list.sort((a,b) => b.price - a.price);
